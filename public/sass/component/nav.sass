@@ -1,0 +1,67 @@
+@import "variables"
+@import "mixins"
+
+$nav-background: $accent-contrast
+$nav-text: $accent
+
+.navbar-custom
+  margin-bottom: 0
+  border-bottom: 1px solid rgba($nav-background, 0.3)
+  text-transform: uppercase
+  background-color: $nav-background
+
+  a
+    color: $nav-text
+
+  .navbar-toggle
+    padding: 4px 16px
+    font-size: 16px
+    color: $nav-text
+    &:focus,
+    &:active
+      outline: none
+
+  .navbar-brand
+    font-weight: 700
+    &:focus
+      outline: none
+
+  // over 768px
+  @media(min-width: 768px)
+    padding: 20px 0
+    border-bottom: none
+    letter-spacing: 1px
+    background-color: transparent
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out
+    transition: background .5s ease-in-out, padding .5s ease-in-out
+    &.top-nav-collapse
+      padding: 0
+      border-bottom: 1px solid rgba($background, 0.3)
+      background-color: $nav-background
+
+  //buttons on right
+  .nav
+    li
+      a
+        -webkit-transition: background .3s ease-in-out
+        -moz-transition: background .3s ease-in-out
+        transition: background .3s ease-in-out
+        font-weight: bold
+
+        &:hover
+          color: rgba($nav-text, 0.8)
+          outline: none
+          background-color: transparent
+
+        &:focus,
+        &:active
+          outline: none
+          background-color: transparent
+
+
+      &.active
+        outline: none
+        a
+          background-color: rgba($nav-text, 0.2)
+          color: $nav-text

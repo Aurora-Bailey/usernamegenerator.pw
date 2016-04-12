@@ -1,0 +1,67 @@
+@import "variables"
+@import "mixins"
+
+#generate
+  .generate-window
+    border: 2px solid black
+    margin: 10px
+    padding: 20px 0
+    background-color: $background
+    color: $background-contrast
+    @include border-bottom-radius(5px)
+    @include border-top-radius(5px)
+    text-transform: none
+
+    .word-wrapper
+      padding: 0 20px
+      height: 30px
+      line-height: 30px
+      text-align: left
+      font-size: 20px
+      font-weight: bold
+      position: relative
+      &:hover
+        background-color: darken($background, 10%)
+
+
+
+      span
+        display: inline-block
+        vertical-align: top
+
+      .flag
+        margin: 5px 10px 5px 0
+
+      .prepend, .append
+        color: lighten($background-contrast, 30%)
+
+      .icon-right
+        position: absolute
+        top: 0
+        right: 20px
+        bottom: 0
+        display: inline-block
+
+        .lookup, .google
+          text-decoration: none
+          display: inline-block
+          color: inherit
+
+        span, a
+          cursor: pointer
+          &:hover
+            color: lighten($background-contrast, 20%)
+
+      &.favorite
+        span.save, .save
+          color: goldenrod
+
+  .generate-button
+    margin: 10px
+
+  h1.generate-tip
+    color: $accent
+    font-size: 10px
+    margin: 0
+    padding: 0
+    text-decoration: none

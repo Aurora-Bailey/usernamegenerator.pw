@@ -1,0 +1,12 @@
+cordova app
+embedable version
+
+=analytics
+=robots.txt
+=xml sitemap
+...keyword consistency
+=minify html
+=custom 404
+...ssl?
+=H1 headings
+=h2 in every section

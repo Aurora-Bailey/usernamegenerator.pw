@@ -1,0 +1,244 @@
+@import "variables"
+@import "mixins"
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0 0 35px
+  text-transform: uppercase
+  font-weight: 700
+  letter-spacing: 1px
+
+p
+  margin: 0 0 25px
+  font-size: 18px
+  line-height: 1.5
+
+  @media(min-width: 768px)
+    margin: 0 0 35px
+    font-size: 20px
+    line-height: 1.6
+
+a
+  color: $primary
+
+.light-weight
+  font-weight: 400
+
+.btn-accent
+  @include button-variant($accent-contrast, $accent, darken($accent, 20%))
+
+.btn-facebook
+  @include button-variant(white, #3B5998, darken(#3B5998, 20%))
+
+.btn-twitter
+  @include button-variant(white, #00aced, darken(#00aced, 20%))
+
+
+
+.narrow-wrapper
+  width: 650px
+  margin: auto
+  @media (max-width: 650px)
+    width: auto
+
+
+.options-dropdown
+
+  .flag
+    margin: 2px 5px 3px 0
+    vertical-align: middle
+
+  .dropdown-menu
+    min-width: inherit
+    padding: 10px 0
+    white-space: nowrap
+
+    li
+      cursor: pointer
+      padding: 1px 10px
+      &:hover
+        background-color: darken($background, 5%)
+.g-plusone, .fb-like, .twitter-share-button
+  vertical-align: top !important
+
+.flag
+  width: 20px
+  height: 20px
+  display: inline-block
+  @include border-bottom-radius(30px)
+  @include border-top-radius(30px)
+  background-image: url('../images/flags-v4.jpg')
+  background-repeat: no-repeat
+  -webkit-box-shadow: inset 0px 0px 15px -5px rgba(0,0,0,0.75)
+  -moz-box-shadow: inset 0px 0px 15px -5px rgba(0,0,0,0.75)
+  box-shadow: inset 0px 0px 15px -5px rgba(0,0,0,0.75)
+
+  $offset: 20px
+  $x: -0px
+  &.flag-arabic
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-english
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-finnish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-french
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-german
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-greek
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-irish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-italian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-japanese
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-korean
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-kurdish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-latin
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-latvian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-lithuanian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-norwegian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-portuguese
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-russian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-sinhala
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-spanish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-swedish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-thai
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-ukrainian
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-xhosa
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-yiddish
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-zulu
+    background-position: 0 $x
+  $x: $x - $offset
+  &.flag-random
+    background-position: 0 $x
+
+
+  &.flag-sm
+    width: 15px
+    height: 15px
+    background-size: cover
+
+    $offset: 15px
+    $x: -0px
+    &.flag-arabic
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-english
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-finnish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-french
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-german
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-greek
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-irish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-italian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-japanese
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-korean
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-kurdish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-latin
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-latvian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-lithuanian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-norwegian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-portuguese
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-russian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-sinhala
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-spanish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-swedish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-thai
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-ukrainian
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-xhosa
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-yiddish
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-zulu
+      background-position: 0 $x
+    $x: $x - $offset
+    &.flag-random
+      background-position: 0 $x

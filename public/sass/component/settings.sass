@@ -1,0 +1,56 @@
+@import "variables"
+@import "mixins"
+
+#settings
+  .setting-option
+    margin: 0 10px
+    height: 45px
+    border-bottom: 2px solid rgba($background-contrast, 0.5)
+    display: block
+
+    .input-title
+      float: left
+      line-height: 45px
+      font-size: 14px
+      padding: 0 10px
+
+    .input-wrapper
+      float: right
+      position: relative
+      padding: 0 10px 0 30px
+
+      .options-dropdown
+        margin: 4px 0
+
+      .range-value
+        position: absolute
+        left: 0
+        line-height: 45px
+        padding: 0 10px
+        font-weight: bold
+        font-size: 16px
+
+      .range-input
+        height: 45px
+        width: 150px
+        float: right
+
+      .text-input
+        margin: 5px 0
+        width: 120px
+
+      .input-button
+        margin: 5px 0
+
+      .spaced-input
+        letter-spacing: 7px
+        text-transform: uppercase
+
+  .setting-subtitle
+    padding: 30px 0 10px
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+    text-transform: uppercase
+    color: lighten($background-contrast, 20%)
+
