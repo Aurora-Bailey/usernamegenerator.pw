@@ -83,7 +83,7 @@ class Lib {
     }
 
     static socialMediaPost(site){
-        var url = 'http://usernamegenerator.pw/';//encodeURI(window.location.href);
+        var url = 'http://unique-username.com/';//encodeURI(window.location.href);
         if(site == 'facebook')
             window.open('http://www.facebook.com/share.php?u=' + url, 'Facebook', 'width=550,height=400');
         else if(site == 'twitter')
