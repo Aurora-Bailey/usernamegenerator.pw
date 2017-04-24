@@ -94,11 +94,10 @@ var filesToMoveClient = [
     './public/robots.txt',
     './public/sitemap.xml',
     './public/min/index.html',
+    './public/google4f3dbc910b297a47.html',
     './public/min/error.html'
 ];
 gulp.task('production_client', ['css', 'js', 'html'], function () {
     gulp.src(filesToMoveClient)
         .pipe(gulp.dest('dist/client'));
 });
-
-
